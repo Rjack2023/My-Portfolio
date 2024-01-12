@@ -1,0 +1,239 @@
+<!-- NOTE DO NOT CHANGE ANYTHING OTHER THAN WHAT THE COMMENTS TELL YOU WHAT TO CHANGE AS THAT IS FOR THE BASE USE OF MY TEMPLATE HERE
+IF YOU WANT TO CHANGE ANYTHING ELSE I ONLY RECCOMEND CHANGING WHAT I SHOW IN MY VIDEO GUIDE SO THAT YOU GET THE BEST RESULT AND 
+DONT END UP WITH A BROKEN SITE AND NO PORTFOLIO IF YOU KNOW WHAT YOU ARE DOING WITH TAILWIND CSS AND WEB DEVELOPMENT IGNORE THIS -->
+
+<!DOCTYPE html>
+<html class="overflow-x-hidden">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Ryan's Portfolio</title>
+  <meta name="description" content="A Brief Portfolio">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- You can look how to change your websites font here by importing google fonts just google it or go on youtube pretty sure tailwind
+  Has its own thing for fonts -->
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Nunito" />
+  <link rel="stylesheet" href="output.css"> <!-- Use your generated Tailwind CSS file -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body id="home">
+    <!-- This is the beginning of my nav bar -->
+    <nav class="bg-gray-900 p-4 z-50 fixed w-full">
+      <div class="container mx-auto flex items-center justify-between">
+          <!-- This makes the image in my nav bar -->
+          <div class="flex items-center">
+              <!-- Change this to your name -->
+              <h1 class="text-white">Ryans Portfolio</h1>
+          </div>
+          <div class="flex space-x-4">
+              <a data-aos="fade-up" data-aos-duration="500" href="#home" class="text-white text-sm md:text-base">Home</a>
+              <a data-aos="fade-up" data-aos-duration="750" href="#about" class="text-white text-sm md:text-base">About</a>
+              <a data-aos="fade-up" data-aos-duration="1000" href="#accomplishments" class="text-white text-sm md:text-base">Certifications</a>
+              <a data-aos="fade-up" data-aos-duration="1250" href="#downloads" class="text-white text-sm md:text-base">Hands On</a>
+              <a data-aos="fade-up" data-aos-duration="1500" href="#contact" class="text-white text-sm md:text-base">Contact</a>
+          </div>
+      </div>
+  </nav>
+    <!-- This is the ending of my navbar -->
+
+  <!-- Full-page background picture -->
+  <div class="relative w-full h-screen overflow-hidden -z-50">
+    <img class="object-cover object-center w-full h-full fixed top-0 left-0" src="dg61sl7-d4c98d20-be87-48b1-ab13-702829cc4cc2.jpg" alt="Background Image">
+</div>
+
+
+  <!-- Hero section -->
+  <section id="hero-section">
+  <div class="absolute inset-0 flex justify-center items-center">
+    <div class="text-white text-4xl text-center">
+      <!-- Scroll over to the right on this line to change "Isaacs Portfolio" to "Your name, Portfolio"-->
+      <h1 data-aos="fade-up" data-aos-duration="2000" class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-white"> Welcome to Ryan's Portfolio</h1>
+      <p data-aos="fade-up" data-aos-duration="2500" class="mb-4 text-base sm:text-lg md:text-xl lg:text-2xl text-white "> Explore my work and accomplishments</p>
+      <a href="#about"><button data-aos="fade-up" data-aos-duration="3000" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full text-sm sm:text-base md:text-lg lg:text-xl">
+         Let's Go!
+      </button>
+    </a>
+    </div>
+  </div>
+  </section>
+  <!-- Your other sections here -->
+
+  <!--About Me Section-->
+  <section data-aos="fade-right" data-aos-duration="2000" id="about" class="bg-white bg-opacity-20 backdrop-blur-md border-2 border-gray-300 rounded-lg px-8 py-8 text-white text-center max-w-7xl mx-auto flex flex-col lg:flex-row items-center space-y-6 lg:space-y-0 lg:space-x-6">
+    <!-- Professional Photo on the left -->
+    <!-- Change the src image to your professional photo either through a file path or a URL -->
+    <img src="IMG_2538.JPG" alt="Professional Photo" class="w-full lg:w-80 h-96 lg:h-160 object-contain rounded-xl mb-4 lg:mb-0">
+    <!-- Text section on the right -->
+    <div class="text-center lg:text-left">
+      <h2 data-aos="fade-up" data-aos-duration="2000" class="text-4xl font-bold mb-4">About Me</h2>
+      <!-- Change the text inside of this p element so that it is YOUR about me -->
+      <p data-aos="fade-up" data-aos-duration="2500" class="text-base">
+        Hello, My name is Ryan, and my professional background is strongly anchored in the broad area of computer networking. Currently enrolled in an exciting Computer Networking tech program, my major goal is to get CompTIA A+ and Net+ certifications, demonstrating my commitment to staying current with cutting-edge technology.
+
+        Outside of academia, I like studying technology through games and the hands-on art of constructing computers. These experiences not only provide a source of personal pleasure but also greatly contribute to the development of a diversified skill set.
+        
+        In addition to my present endeavors, I've lately committed to learning web design. Recognizing the importance of web technologies in today's world, I'm keen to extend my skill set and contribute. meaningfully to the digital space.
+        
+        My passion for technology extends beyond my professional pursuits and into my personal endeavors, displaying a genuine curiosity that I bring to whatever work at hand. With a solid foundation in computer networking, a growing interest in web design, and an instinctive curiosity that drives my ongoing learning, I am well-positioned to make an important contribution to the ever-changing IT sector.
+
+      </p>
+    </div>
+  </section>
+
+
+
+  <!-- Accomplishments Section -->
+  <section id="accomplishments" class="py-12">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-semibold text-white mb-6">Accomplishments</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <!-- Accomplishment Card 1 -->
+        <div data-aos="fade-right" data-aos-duration="1500" class="bg-white p-4 rounded-lg shadow-md">
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Student in sctc networking class</h3>
+          <p class="text-gray-600">I am a student in the somerset county technology center networking class. </p>
+        </div>
+  
+        <!-- Accomplishment Card 2 -->
+        <div data-aos="fade-right" data-aos-duration="2000" class="bg-white p-4 rounded-lg shadow-md">
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Learning to code in HTML</h3>
+          <p class="text-gray-600">I am learning to code in HTML via freecodecamp.org during my freetime.</p>
+        </div>
+  
+        <!-- Accomplishment Card 3 -->
+        <div data-aos="fade-right" data-aos-duration="2500" class="bg-white p-4 rounded-lg shadow-md">
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Experience in Desktop PC building</h3>
+          <p class="text-gray-600">I have experience building several gaming desktop compters over the years.</p>
+        </div>
+        <div data-aos="fade-left" data-aos-duration="1500" class="bg-white p-4 rounded-lg shadow-md">
+          <!-- Change this h3 elements text to change the heading of your accomplishment card -->
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">A and B student at my homeschool</h3>
+          <!-- Change this p elements text to change the text below your header to elaborate on your accomplishment -->
+          <p class="text-gray-600">I have good grades at my school all A's and B's didnt have a grade drop below 90 this quarter.</p>
+        </div>
+        <div data-aos="fade-left" data-aos-duration="2000" class="bg-white p-4 rounded-lg shadow-md">
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Good at math</h3>
+          <p class="text-gray-600">I have always had high grades in my math classes typically high 80's and higher depending on the year. </p>
+        </div>
+        <!--IF YOU WANT TO ADD MORE CARDS COPY AND PASTE THE NEXT 4 LINES AND PASTE BELOW ON LINE 122 MAKE SURE TO MAINTAIN READABLE 
+        CODE LIKE THE CURRENT FORMAT FOR YOUR BENEFIT AS IT WILL BE EASIER TO MAINTAIN THAT WAY -->
+        <div data-aos="fade-left" data-aos-duration="2500" class="bg-white p-4 rounded-lg shadow-md">
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Good at Desktop hardware troubleshooting</h3>
+          <p class="text-gray-600">I work really well with trying to troubleshoot Desktop PC hardware.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <section id="certifications" class="py-8">
+    <h2 class="text-center text-3xl font-semibold text-white mb-6">Certifications</h2>
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-4">
+      <!-- First Image and Description -->
+      <div data-aos="flip-up" data-aos-duration="2000" class="flex flex-col items-center">
+        <img src="1705066005627-096ccd3f-7690-44e5-83bb-b9a3a3a883aa_1.png" alt="Image 1" class="max-w-full h-auto rounded-lg">
+        <div class="mt-4 text-center md:text-left">
+          <h3 class="text-white text-xl font-bold">CareerSafe Interview Skills</h3>
+          <p class="text-base text-white">The Interview Skills Training Course provides knowledge and skills for students seeking part-time employment opportunities, internships or apprenticeships. Through this training, students will learn about seeking and securing employment, workplace ethics, and success in the workplace.</p>
+        </div>
+      </div>
+  
+      <!-- Second Image and Description -->
+      <div data-aos="flip-up" data-aos-duration="2000"  class="flex flex-col items-center">
+        <img src="1705066024206-e5f90f26-3d35-47dc-8caa-2c8e94fb3bb1_1.png" alt="OSHA 10 Hour General Industry" class="max-w-full h-auto rounded-lg">
+        <div class="mt-4 text-center md:text-left">
+          <h3 class="text-white text-xl font-bold">OSHA 10-Hour General Industry</h3>
+          <p class="text-white text-base">The OSHA 10-Hour General Industry course is a workplace safety training program designed by the Occupational Safety and Health Administration (OSHA) in the United States. It is intended to educate workers and employers on essential safety and health topics within a general industry setting.</p>
+        </div>
+      </div>
+  
+      <!-- Add more image and description pairs as needed -->
+
+  
+
+    </div>
+  </section>
+
+  <section id="hands-on" class="py-8">
+    <h2 class="text-center text-3xl font-semibold text-white mb-6">Hands on Photos</h2>
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-4">
+      <!-- First Image and Description -->
+      <div data-aos="flip-up" data-aos-duration="2000" class="flex flex-col items-center">
+        <img src="IMG_3520.jpg" alt="repairing-computer" class="max-w-full h-auto rounded-lg">
+        <div class="mt-4 text-center md:text-left">
+          <h3 class="text-white text-xl font-bold">3D Printer</h3>
+          <p class="text-base text-white">Changing settings on a 3d printer.</p>
+        </div>
+      </div>
+  
+      <!-- Second Image and Description -->
+      <div data-aos="flip-up" data-aos-duration="2000"  class="flex flex-col items-center">
+        <img src="IMG_3521.jpg" alt="Coding" class="max-w-full h-auto rounded-lg">
+        <div class="mt-4 text-center md:text-left">
+          <h3 class="text-white text-xl font-bold">Doing Web Design</h3>
+          <p class="text-white text-base">Me designing this portfolio.</p>
+        </div>
+      </div>
+  
+      <!-- Add more image and description pairs as needed -->
+      
+
+    </div>
+  </section>
+
+  <div class="m-4 flex justify-center items-center min-h-screen">
+    <section id="downloads" class="bg-white p-6 rounded-lg shadow-lg md:w-1/2 lg:w-1/3">
+        <!-- Page Heading -->
+        <h1 class="text-2xl font-bold mb-4">My Resume and Cover Letter</h1>
+        
+        <!-- Download Links -->
+        <div class="my-4">
+          <!-- Resume -->
+            <a href="joemama.com" class="flex justify-center items-center bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 text-sm mb-2 md:mb-4">Download Resume</a>
+        </div>
+        <!-- Cover Letter -->
+        <div class="my-4">
+            <a href="joemama.com" class="flex justify-center items-center bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 text-sm mb-2 md:mb-4">Download Cover Letter</a>
+        </div>
+        <!-- Business Cards -->
+        <div class="my-4">
+          <a href="joemama.com" class="flex justify-center items-center bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 text-sm mb-2 md:mb-4">Download Business Cards</a>
+      </div>
+    </section>
+</div>
+<!-- Contact Info -->
+  <section id="contact" class="bg-gray-900 py-12">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-semibold text-white mb-6">Contact Information</h2>
+      
+      <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+        <!-- Contact Info Card 1 Email -->
+        <div data-aos="fade-up" data-aos-duration="2000" class="bg-white p-4 rounded-lg shadow-md">
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Email</h3>
+          <p class="text-gray-600">rjackson21747@gmail.com</p>
+        </div>
+        
+        <!-- Contact Info Card 2 Phone Number -->
+        <div data-aos="fade-up" data-aos-duration="2000"  class="bg-white p-4 rounded-lg shadow-md">
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Phone</h3>
+          <p class="text-gray-600">814-289-5862</p>
+        </div>
+        
+        <!-- Contact Info Card 3 Address -->
+        <div data-aos="fade-up" data-aos-duration="2000" class="bg-white p-4 rounded-lg shadow-md">
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Address</h3>
+          <p class="text-gray-600">186 Bishop Ln, Somerset, PA 15501</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+</body>
+</html>
